@@ -1,9 +1,18 @@
-import Hero from "./components/home/Hero";
+import Hero from "@/app/components/home/Hero";
+import ProductSection from "@/app/components/home/ProductsSection";
+// import AboutSection from"@/app/components/home/AboutSection";
+// import ContactSection from "@/app/components/home/ContactSection";
 
-export default function Home() {
+export default function HomePage() {
   return (
-      <main className="">
-        <Hero />
-      </main>
+    <>
+      <Hero />
+
+      <ProductSection />
+
+      {/* <AboutSection /> */}
+
+      {/* <ContactSection /> */}
+    </>
   );
 }
