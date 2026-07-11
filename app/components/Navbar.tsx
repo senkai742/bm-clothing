@@ -6,25 +6,7 @@ import Link from "next/link";
 import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
 import { siteConfig } from "@/config/site";
-
-const navItems = [
-  {
-    title: "Home",
-    href: "/",
-  },
-  {
-    title: "Products",
-    href: "/products",
-  },
-  {
-    title: "About",
-    href: "/about",
-  },
-  {
-    title: "Contact",
-    href: "/contact",
-  },
-];
+import navItems  from "@/config/navItems";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
