@@ -31,7 +31,7 @@ export default function ProductSection() {
             <div key={category.id} className="w-full">
               {/* Category Sub-Label & Context Controls */}
               <div className="mb-4 flex justify-between items-center">
-                <h3 className="text-xs font-semibold tracking-wider uppercase text-zinc-500">
+                <h3 className="text-xl font-semibold tracking-wider uppercase text-zinc-500">
                   {category.title}
                 </h3>
                 <Link

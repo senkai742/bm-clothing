@@ -1,377 +1,249 @@
 export const products = [
+  // ==========================================
+  // MEN'S FASHION (8 Images)
+  // ==========================================
   {
-    id: 1,
+    id: "m1",
     name: "Premium Men's Shirt",
     price: 850,
     category: "Men's Fashion",
-    image: "/images/products/1.jpg",
+    image: "/images/categories/mens-fashion/1.jpg",
     categorySlug: "mens-fashion"
   },
   {
-    id: 2,
+    id: "m2",
     name: "Casual T-Shirt",
     price: 650,
     category: "Men's Fashion",
-    image: "/images/products/2.jpg",
+    image: "/images/categories/mens-fashion/2.jpg",
     categorySlug: "mens-fashion"
   },
   {
-    id: 3,
-    name: "Girls Dress",
-    price: 1200,
-    category: "Girls Fashion",
-    image: "/images/products/3.jpg",
-    categorySlug: "girls-fashion"
-  },
-  {
-    id: 4,
-    name: "Boys Polo",
-    price: 780,
-    category: "Boys Fashion",
-    image: "/images/products/4.jpg",
-    categorySlug: "boys-fashion"
-  },
-  {
-    id: 5,
-    name: "Women's Kurti",
-    price: 1350,
-    category: "Women's Fashion",
-    image: "/images/products/5.jpg",
-    categorySlug: "womens-fashion"
-  },
-  {
-    id: 6,
-    name: "Denim Jacket",
-    price: 1850,
+    id: "m3",
+    name: "Slim Fit Denim Shirt",
+    price: 1450,
     category: "Men's Fashion",
-    image: "/images/products/6.jpg",
+    image: "/images/categories/mens-fashion/3.jpg",
+    categorySlug: "mens-fashion"
+  },
+  {
+    id: "m4",
+    name: "Oversized Graphic Tee",
+    price: 750,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/4.jpg",
+    categorySlug: "mens-fashion"
+  },
+  {
+    id: "m5",
+    name: "Classic Polo Shirt",
+    price: 950,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/5.jpg",
+    categorySlug: "mens-fashion"
+  },
+  {
+    id: "m6",
+    name: "Linen Blend Summer Shirt",
+    price: 1650,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/6.jpg",
+    categorySlug: "mens-fashion"
+  },
+  {
+    id: "m7",
+    name: "Oxford Cotton Button-Down",
+    price: 1350,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/7.jpg",
+    categorySlug: "mens-fashion"
+  },
+  {
+    id: "m8",
+    name: "Smart Casual Blazer",
+    price: 3450,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/8.jpg",
     categorySlug: "mens-fashion"
   },
 
+  // ==========================================
+  // WOMEN'S FASHION (13 Images)
+  // ==========================================
   {
-    id: 7,
-    name: "Premium Men's Shirt",
-    price: 850,
-    category: "Men's Fashion",
-    image: "/images/products/1.jpg",
-    categorySlug: "mens-fashion"
-  },
-  {
-    id: 8,
-    name: "Casual T-Shirt",
-    price: 650,
-    category: "Men's Fashion",
-    image: "/images/products/2.jpg",
-    categorySlug: "mens-fashion"
-  },
-  {
-    id: 9,
-    name: "Girls Dress",
-    price: 1200,
-    category: "Girls Fashion",
-    image: "/images/products/3.jpg",
-    categorySlug: "girls-fashion"
-  },
-  {
-    id: 10,
-    name: "Boys Polo",
-    price: 780,
-    category: "Boys Fashion",
-    image: "/images/products/4.jpg",
-    categorySlug: "boys-fashion"
-  },
-  {
-    id: 11,
-    name: "Women's Kurti",
-    price: 1350,
+    id: "w1",
+    name: "Traditional Cotton Kurti",
+    price: 1250,
     category: "Women's Fashion",
-    image: "/images/products/5.jpg",
+    image: "/images/categories/womens-fashion/1.jpg",
     categorySlug: "womens-fashion"
   },
   {
-    id: 12,
-    name: "Denim Jacket",
-    price: 1850,
-    category: "Men's Fashion",
-    image: "/images/products/6.jpg",
-    categorySlug: "mens-fashion"
-  },
-
-  {
-    id: 13,
-    name: "Premium Men's Shirt",
-    price: 850,
-    category: "Men's Fashion",
-    image: "/images/products/1.jpg",
-    categorySlug: "mens-fashion"
-  },
-  {
-    id: 14,
-    name: "Casual T-Shirt",
-    price: 650,
-    category: "Men's Fashion",
-    image: "/images/products/2.jpg",
-    categorySlug: "mens-fashion"
-  },
-  {
-    id: 15,
-    name: "Girls Dress",
-    price: 1200,
-    category: "Girls Fashion",
-    image: "/images/products/3.jpg",
-    categorySlug: "girls-fashion"
-  },
-  {
-    id: 16,
-    name: "Boys Polo",
-    price: 780,
-    category: "Boys Fashion",
-    image: "/images/products/4.jpg",
-    categorySlug: "boys-fashion"
-  },
-  {
-    id: 17,
-    name: "Women's Kurti",
-    price: 1350,
+    id: "w2",
+    name: "Designer Georgette Kurti",
+    price: 1650,
     category: "Women's Fashion",
-    image: "/images/products/5.jpg",
+    image: "/images/categories/womens-fashion/2.jpg",
     categorySlug: "womens-fashion"
   },
   {
-    id: 18,
-    name: "Denim Jacket",
-    price: 1850,
-    category: "Men's Fashion",
-    image: "/images/products/6.jpg",
-    categorySlug: "mens-fashion"
-  },
-
-  {
-    id: 19,
-    name: "Premium Men's Shirt",
-    price: 850,
-    category: "Men's Fashion",
-    image: "/images/products/1.jpg",
-    categorySlug: "mens-fashion"
-  },
-  {
-    id: 20,
-    name: "Casual T-Shirt",
-    price: 650,
-    category: "Men's Fashion",
-    image: "/images/products/2.jpg",
-    categorySlug: "mens-fashion"
-  },
-  {
-    id: 21,
-    name: "Girls Dress",
-    price: 1200,
-    category: "Girls Fashion",
-    image: "/images/products/3.jpg",
-    categorySlug: "girls-fashion"
-  },
-  {
-    id: 22,
-    name: "Boys Polo",
-    price: 780,
-    category: "Boys Fashion",
-    image: "/images/products/4.jpg",
-    categorySlug: "boys-fashion"
-  },
-  {
-    id: 23,
-    name: "Women's Kurti",
-    price: 1350,
+    id: "w3",
+    name: "Casual Linen Top",
+    price: 950,
     category: "Women's Fashion",
-    image: "/images/products/5.jpg",
+    image: "/images/categories/womens-fashion/3.jpg",
     categorySlug: "womens-fashion"
   },
   {
-    id: 24,
-    name: "Denim Jacket",
-    price: 1850,
-    category: "Men's Fashion",
-    image: "/images/products/6.jpg",
-    categorySlug: "mens-fashion"
-  },
-
-  {
-    id: 25,
-    name: "Premium Men's Shirt",
-    price: 850,
-    category: "Men's Fashion",
-    image: "/images/products/1.jpg",
-    categorySlug: "mens-fashion"
-  },
-  {
-    id: 26,
-    name: "Casual T-Shirt",
-    price: 650,
-    category: "Men's Fashion",
-    image: "/images/products/2.jpg",
-    categorySlug: "mens-fashion"
-  },
-  {
-    id: 27,
-    name: "Girls Dress",
-    price: 1200,
-    category: "Girls Fashion",
-    image: "/images/products/3.jpg",
-    categorySlug: "girls-fashion"
-  },
-  {
-    id: 28,
-    name: "Boys Polo",
-    price: 780,
-    category: "Boys Fashion",
-    image: "/images/products/4.jpg",
-    categorySlug: "boys-fashion"
-  },
-  {
-    id: 29,
-    name: "Women's Kurti",
-    price: 1350,
+    id: "w4",
+    name: "Premium Saree Collection",
+    price: 4500,
     category: "Women's Fashion",
-    image: "/images/products/5.jpg",
+    image: "/images/categories/womens-fashion/4.jpg",
     categorySlug: "womens-fashion"
   },
   {
-    id: 30,
-    name: "Denim Jacket",
-    price: 1850,
-    category: "Men's Fashion",
-    image: "/images/products/6.jpg",
-    categorySlug: "mens-fashion"
-  },
-
-  {
-    id: 31,
-    name: "Premium Men's Shirt",
-    price: 850,
-    category: "Men's Fashion",
-    image: "/images/products/1.jpg",
-    categorySlug: "mens-fashion"
-  },
-  {
-    id: 32,
-    name: "Casual T-Shirt",
-    price: 650,
-    category: "Men's Fashion",
-    image: "/images/products/2.jpg",
-    categorySlug: "mens-fashion"
-  },
-  {
-    id: 33,
-    name: "Girls Dress",
-    price: 1200,
-    category: "Girls Fashion",
-    image: "/images/products/3.jpg",
-    categorySlug: "girls-fashion"
-  },
-  {
-    id: 34,
-    name: "Boys Polo",
-    price: 780,
-    category: "Boys Fashion",
-    image: "/images/products/4.jpg",
-    categorySlug: "boys-fashion"
-  },
-  {
-    id: 35,
-    name: "Women's Kurti",
+    id: "w5",
+    name: "Women's Kurti Elegant",
     price: 1350,
     category: "Women's Fashion",
-    image: "/images/products/5.jpg",
+    image: "/images/categories/womens-fashion/5.jpg",
     categorySlug: "womens-fashion"
   },
   {
-    id: 36,
-    name: "Denim Jacket",
-    price: 1850,
-    category: "Men's Fashion",
-    image: "/images/products/6.jpg",
-    categorySlug: "mens-fashion"
-  },
-
-  {
-    id: 37,
-    name: "Premium Men's Shirt",
-    price: 850,
-    category: "Men's Fashion",
-    image: "/images/products/1.jpg",
-    categorySlug: "mens-fashion"
-  },
-  {
-    id: 38,
-    name: "Casual T-Shirt",
-    price: 650,
-    category: "Men's Fashion",
-    image: "/images/products/2.jpg",
-    categorySlug: "mens-fashion"
-  },
-  {
-    id: 39,
-    name: "Girls Dress",
-    price: 1200,
-    category: "Girls Fashion",
-    image: "/images/products/3.jpg",
-    categorySlug: "girls-fashion"
-  },
-  {
-    id: 40,
-    name: "Boys Polo",
-    price: 780,
-    category: "Boys Fashion",
-    image: "/images/products/4.jpg",
-    categorySlug: "boys-fashion"
-  },
-  {
-    id: 41,
-    name: "Women's Kurti",
-    price: 1350,
+    id: "w6",
+    name: "Floral Print Maxi Dress",
+    price: 2200,
     category: "Women's Fashion",
-    image: "/images/products/5.jpg",
+    image: "/images/categories/womens-fashion/6.jpg",
     categorySlug: "womens-fashion"
   },
   {
-    id: 42,
-    name: "Denim Jacket",
-    price: 1850,
-    category: "Men's Fashion",
-    image: "/images/products/6.jpg",
-    categorySlug: "mens-fashion"
+    id: "w7",
+    name: "Embroidered Three Piece",
+    price: 2850,
+    category: "Women's Fashion",
+    image: "/images/categories/womens-fashion/7.jpg",
+    categorySlug: "womens-fashion"
+  },
+  {
+    id: "w8",
+    name: "Anarkali Style Suit",
+    price: 3200,
+    category: "Women's Fashion",
+    image: "/images/categories/womens-fashion/8.jpg",
+    categorySlug: "womens-fashion"
+  },
+  {
+    id: "w9",
+    name: "Modern Palazzo Set",
+    price: 1950,
+    category: "Women's Fashion",
+    image: "/images/categories/womens-fashion/9.jpg",
+    categorySlug: "womens-fashion"
+  },
+  {
+    id: "w10",
+    name: "Silk Fusion Tunic",
+    price: 1750,
+    category: "Women's Fashion",
+    image: "/images/categories/womens-fashion/10.jpg",
+    categorySlug: "womens-fashion"
+  },
+  {
+    id: "w11",
+    name: "Solid Color Shrug",
+    price: 850,
+    category: "Women's Fashion",
+    image: "/images/categories/womens-fashion/11.jpg",
+    categorySlug: "womens-fashion"
+  },
+  {
+    id: "w12",
+    name: "Casual Denim Jeans",
+    price: 1500,
+    category: "Women's Fashion",
+    image: "/images/categories/womens-fashion/12.jpg",
+    categorySlug: "womens-fashion"
+  },
+  {
+    id: "w13",
+    name: "Premium Linen Trousers",
+    price: 1200,
+    category: "Women's Fashion",
+    image: "/images/categories/womens-fashion/13.jpg",
+    categorySlug: "womens-fashion"
   },
 
+  // ==========================================
+  // BOYS FASHION (4 Images)
+  // ==========================================
   {
-    id: 43,
-    name: "Premium Men's Shirt",
-    price: 850,
-    category: "Men's Fashion",
-    image: "/images/products/1.jpg",
-    categorySlug: "mens-fashion"
+    id: "b1",
+    name: "Kids Casual Graphic Tee",
+    price: 450,
+    category: "Boys Fashion",
+    image: "/images/categories/boys-fashion/1.jpg",
+    categorySlug: "boys-fashion"
   },
   {
-    id: 44,
-    name: "Casual T-Shirt",
+    id: "b2",
+    name: "Boys Denim Shorts",
     price: 650,
-    category: "Men's Fashion",
-    image: "/images/products/2.jpg",
-    categorySlug: "mens-fashion"
+    category: "Boys Fashion",
+    image: "/images/categories/boys-fashion/2.jpg",
+    categorySlug: "boys-fashion"
   },
   {
-    id: 45,
-    name: "Girls Dress",
-    price: 1200,
-    category: "Girls Fashion",
-    image: "/images/products/3.jpg",
-    categorySlug: "girls-fashion"
+    id: "b3",
+    name: "Comfort Cotton Panjabi",
+    price: 1100,
+    category: "Boys Fashion",
+    image: "/images/categories/boys-fashion/3.jpg",
+    categorySlug: "boys-fashion"
   },
   {
-    id: 46,
+    id: "b4",
     name: "Boys Polo",
     price: 780,
     category: "Boys Fashion",
-    image: "/images/products/4.jpg",
+    image: "/images/categories/boys-fashion/4.jpg",
     categorySlug: "boys-fashion"
   },
+
+  // ==========================================
+  // GIRLS FASHION (4 Images)
+  // ==========================================
+  {
+    id: "g1",
+    name: "Floral Cotton Frock",
+    price: 950,
+    category: "Girls Fashion",
+    image: "/images/categories/girls-fashion/1.jpg",
+    categorySlug: "girls-fashion"
+  },
+  {
+    id: "g2",
+    name: "Girls Leggings Set",
+    price: 550,
+    category: "Girls Fashion",
+    image: "/images/categories/girls-fashion/2.jpg",
+    categorySlug: "girls-fashion"
+  },
+  {
+    id: "g3",
+    name: "Girls Dress Luxury",
+    price: 1200,
+    category: "Girls Fashion",
+    image: "/images/categories/girls-fashion/3.jpg",
+    categorySlug: "girls-fashion"
+  },
+  {
+    id: "g4",
+    name: "Embroidered Salwar Kameez",
+    price: 1400,
+    category: "Girls Fashion",
+    image: "/images/categories/girls-fashion/4.jpg",
+    categorySlug: "girls-fashion"
+  }
 ];

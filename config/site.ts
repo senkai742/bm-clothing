@@ -12,7 +12,7 @@ export const siteConfig = {
     "bayazidhasan7256@gmail.com",
   ],
 
-  address: "",
+  address: "Dhaka, Bangladesh",
 
   hero: {
     title: "Discover Premium Fashion",
