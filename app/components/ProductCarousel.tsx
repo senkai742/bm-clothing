@@ -25,11 +25,11 @@ export default function ProductCarousel({
 
   useEffect(() => {
     const checkScrollable = () => {
-      if (!scrollContainerRef.current) return;
+      const container = scrollContainerRef.current;
 
-      const { scrollWidth, clientWidth } = scrollContainerRef.current;
+      if (!container) return;
 
-      setIsScrollable(scrollWidth > clientWidth + 5);
+      setIsScrollable(container.scrollWidth > container.clientWidth + 5);
     };
 
     checkScrollable();
@@ -39,21 +39,25 @@ export default function ProductCarousel({
     return () => window.removeEventListener("resize", checkScrollable);
   }, [products]);
 
-  const scroll = (direction: "left" | "right") => {
+  const getScrollAmount = () => {
     const container = scrollContainerRef.current;
 
-    if (!container) return;
+    if (!container) return 0;
 
     const card = container.querySelector(
       "[data-card]"
     ) as HTMLDivElement | null;
 
-    const scrollAmount = card
-      ? card.offsetWidth + 20
-      : container.clientWidth * 0.8;
+    return card ? card.offsetWidth + 20 : container.clientWidth;
+  };
+
+  const scroll = (direction: "left" | "right") => {
+    const container = scrollContainerRef.current;
+
+    if (!container) return;
 
     container.scrollBy({
-      left: direction === "left" ? -scrollAmount : scrollAmount,
+      left: direction === "left" ? -getScrollAmount() : getScrollAmount(),
       behavior: "smooth",
     });
   };
@@ -64,14 +68,6 @@ export default function ProductCarousel({
     if (!container || !isScrollable) return;
 
     const interval = setInterval(() => {
-      const card = container.querySelector(
-        "[data-card]"
-      ) as HTMLDivElement | null;
-
-      const scrollAmount = card
-        ? card.offsetWidth + 20
-        : container.clientWidth * 0.8;
-
       if (
         container.scrollLeft + container.clientWidth >=
         container.scrollWidth - 5
@@ -82,7 +78,7 @@ export default function ProductCarousel({
         });
       } else {
         container.scrollBy({
-          left: scrollAmount,
+          left: getScrollAmount(),
           behavior: "smooth",
         });
       }
@@ -93,12 +89,11 @@ export default function ProductCarousel({
 
   return (
     <div className="relative">
-
       {isScrollable && (
         <>
           <button
             onClick={() => scroll("left")}
-            className="absolute left-2 top-1/2 z-30 -translate-y-1/2 rounded-full border border-zinc-200 bg-white p-2 shadow-md transition hover:bg-zinc-50 active:scale-95 md:left-4"
+            className="absolute left-3 top-[38%] z-30 -translate-y-1/2 rounded-full border border-zinc-300 bg-white p-2 shadow-md transition hover:bg-zinc-50 active:scale-95 text-black/50"
             aria-label="Previous"
           >
             <ChevronLeft className="h-5 w-5" />
@@ -106,7 +101,7 @@ export default function ProductCarousel({
 
           <button
             onClick={() => scroll("right")}
-            className="absolute right-2 top-1/2 z-30 -translate-y-1/2 rounded-full border border-zinc-200 bg-white p-2 shadow-md transition hover:bg-zinc-50 active:scale-95 md:right-4"
+            className="absolute right-3 top-[38%] z-30 -translate-y-1/2 rounded-full border border-zinc-300 bg-white p-2 shadow-md transition hover:bg-zinc-50 active:scale-95 text-black/50"
             aria-label="Next"
           >
             <ChevronRight className="h-5 w-5" />
@@ -127,12 +122,11 @@ export default function ProductCarousel({
             key={product.id}
             data-card
             className="
-              w-[72%]
-              min-[400px]:w-[190px]
+              w-full
+              shrink-0
+              snap-center
               sm:w-[220px]
               md:w-[260px]
-              shrink-0
-              snap-start
             "
           >
             <ProductCard
