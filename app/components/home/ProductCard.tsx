@@ -19,30 +19,44 @@ export default function ProductCard({
   return (
     <Link
       href={`/products/${id}`}
-      className="group flex w-full flex-col bg-white"
+      className="group flex flex-col"
     >
-      <div className="relative aspect-[3/4] w-full overflow-hidden bg-zinc-50 rounded-sm">
+      {/* Product Image */}
+      <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-zinc-100 shadow-sm transition-all duration-300 group-hover:shadow-lg">
         <Image
           src={image}
           alt={name}
           fill
-          sizes="(max-w-640px) 50vw, (max-w-768px) 25vw, 16vw"
-          className="object-cover transition duration-700 ease-out group-hover:scale-105"
+          priority={false}
+          sizes="
+            (max-width: 399px) 72vw,
+            (max-width: 640px) 190px,
+            (max-width: 768px) 220px,
+            260px
+          "
+          className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
       </div>
 
-      <div className="pt-3 pb-1">
-        <p className="mb-0.5 text-[10px] uppercase tracking-widest text-zinc-400">
+      {/* Content */}
+      <div className="space-y-2 pt-4">
+        <span className="inline-flex w-fit rounded-full bg-zinc-100 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wide text-zinc-600">
           {category}
-        </p>
+        </span>
 
-        <h3 className="line-clamp-1 text-sm font-medium tracking-tight text-zinc-800 group-hover:text-black transition-colors">
+        <h3 className="line-clamp-2 text-[15px] font-medium leading-5 tracking-tight text-zinc-900 transition-colors group-hover:text-black">
           {name}
         </h3>
 
-        <p className="mt-1 text-sm font-semibold text-zinc-950">
-          ৳{price.toLocaleString("en-BD")}
-        </p>
+        <div className="flex items-center justify-between pt-1">
+          <p className="text-base font-bold text-zinc-950">
+            ৳ {price.toLocaleString("en-BD")}
+          </p>
+
+          <span className="text-sm font-medium text-zinc-400 transition-colors group-hover:text-zinc-900">
+            View →
+          </span>
+        </div>
       </div>
     </Link>
   );
