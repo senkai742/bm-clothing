@@ -48,7 +48,7 @@ export default function ProductCarousel({
       "[data-card]"
     ) as HTMLDivElement | null;
 
-    return card ? card.offsetWidth + 20 : container.clientWidth;
+    return card ? card.offsetWidth + 12 : container.clientWidth;
   };
 
   const scroll = (direction: "left" | "right") => {
@@ -93,7 +93,7 @@ export default function ProductCarousel({
         <>
           <button
             onClick={() => scroll("left")}
-            className="absolute left-3 top-[38%] z-30 -translate-y-1/2 rounded-full border border-zinc-300 bg-white p-2 shadow-md transition hover:bg-zinc-50 active:scale-95 text-black/50"
+            className="absolute left-2 top-[34%] z-30 -translate-y-1/2 rounded-full border border-zinc-200 bg-white/95 p-2 text-zinc-600 shadow transition hover:bg-white hover:text-black active:scale-95"
             aria-label="Previous"
           >
             <ChevronLeft className="h-5 w-5" />
@@ -101,7 +101,7 @@ export default function ProductCarousel({
 
           <button
             onClick={() => scroll("right")}
-            className="absolute right-3 top-[38%] z-30 -translate-y-1/2 rounded-full border border-zinc-300 bg-white p-2 shadow-md transition hover:bg-zinc-50 active:scale-95 text-black/50"
+            className="absolute right-2 top-[34%] z-30 -translate-y-1/2 rounded-full border border-zinc-200 bg-white/95 p-2 text-zinc-600 shadow transition hover:bg-white hover:text-black active:scale-95"
             aria-label="Next"
           >
             <ChevronRight className="h-5 w-5" />
@@ -111,7 +111,7 @@ export default function ProductCarousel({
 
       <div
         ref={scrollContainerRef}
-        className="flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth pb-4 scrollbar-none"
+        className="flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-smooth pb-4 scrollbar-none"
         style={{
           scrollbarWidth: "none",
           msOverflowStyle: "none",
@@ -122,11 +122,13 @@ export default function ProductCarousel({
             key={product.id}
             data-card
             className="
-              w-full
-              shrink-0
-              snap-center
+              w-[72%]
+              min-[360px]:w-[68%]
+              min-[390px]:w-[64%]
               sm:w-[220px]
-              md:w-[260px]
+              md:w-[250px]
+              shrink-0
+              snap-start
             "
           >
             <ProductCard
