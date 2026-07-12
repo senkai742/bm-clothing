@@ -30,20 +30,18 @@ export default function Navbar() {
               <Link
                 key={item.title}
                 href={item.href}
-                className={`relative py-1 text-sm font-medium transition-colors duration-200 ${
-                  isActive
+                className={`relative py-1 text-sm font-medium transition-colors duration-200 ${isActive
                     ? "text-zinc-900"
                     : "text-zinc-500 hover:text-black"
-                }`}
+                  }`}
               >
                 {item.title}
 
                 <span
-                  className={`absolute -bottom-1 left-0 h-[2px] bg-black transition-all duration-300 ${
-                    isActive
+                  className={`absolute -bottom-1 left-0 h-[2px] bg-black transition-all duration-300 ${isActive
                       ? "w-full"
                       : "w-0 group-hover:w-full"
-                  }`}
+                    }`}
                 />
               </Link>
             );
@@ -64,9 +62,26 @@ export default function Navbar() {
         {/* Mobile Button */}
         <button
           onClick={() => setOpen(!open)}
-          className="rounded-lg p-2 transition hover:bg-zinc-100 md:hidden"
+          aria-label="Toggle Menu"
+          className="
+    flex h-11 w-11 items-center justify-center
+    rounded-xl
+    border border-zinc-200
+    bg-white
+    text-zinc-900
+    shadow-sm
+    transition-all duration-200
+    hover:bg-zinc-100
+    hover:border-zinc-300
+    active:scale-95
+    md:hidden
+  "
         >
-          {open ? <X size={24} /> : <Menu size={24} />}
+          {open ? (
+            <X size={24} strokeWidth={2.5} />
+          ) : (
+            <Menu size={24} strokeWidth={2.5} />
+          )}
         </button>
       </div>
 
@@ -83,11 +98,10 @@ export default function Navbar() {
                   key={item.title}
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className={`rounded-lg px-3 py-3 text-sm transition ${
-                    isActive
+                  className={`rounded-lg px-3 py-3 text-sm transition ${isActive
                       ? "bg-zinc-100 font-semibold text-black"
                       : "text-zinc-600 hover:bg-zinc-50"
-                  }`}
+                    }`}
                 >
                   {item.title}
                 </Link>
