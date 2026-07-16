@@ -4,33 +4,33 @@ export const products = [
   // ==========================================
   {
     id: "m1",
-    name: "Mens Stylish Baggy Pant",
+    name: "Men's Stylish Baggy=",
     price: 1850,
     category: "Men's Fashion",
     image: "/images/categories/mens-fashion/1.jpg",
     categorySlug: "mens-fashion",
     description:
-      "A premium cotton baggy pant designed for everyday comfort and effortless style. Crafted with quality fabric for a refined and modern look."
+      "Relaxed-fit baggy denim jeans with a convenient drawstring waistband, available in three washed shades for versatile everyday styling. A go-to choice for effortless streetwear comfort."
   },
   {
     id: "m2",
-    name: "Mens Stylish 6pkt Pant",
+    name: "Men's Stylish 6pkt Pant",
     price: 2550,
     category: "Men's Fashion",
     image: "/images/categories/mens-fashion/3.jpg",
     categorySlug: "mens-fashion",
     description:
-      "Modern six-pocket cargo pant made with durable premium fabric, offering practicality and a stylish streetwear-inspired look."
+      "Slim-fit cargo jeans crafted with premium stretch denim and structured side pockets, delivering a modern tapered silhouette with practical utility. A sharp addition to any casual or streetwear wardrobe."
   },
   {
     id: "m3",
-    name: "Mens Stylish 6pkt Pant",
+    name: "EKS Black Slim Cargo Jeans",
     price: 2550,
     category: "Men's Fashion",
     image: "/images/categories/mens-fashion/4.jpg",
     categorySlug: "mens-fashion",
     description:
-      "Premium six-pocket cargo pant designed for comfort, durability, and a modern casual appearance."
+      "Sleek black slim-fit cargo jeans with defined paneling and multiple pockets, offering a sharp streetwear aesthetic with everyday durability. The dark wash and structured cut make them effortlessly versatile."
   },
   {
     id: "m4",
@@ -40,49 +40,49 @@ export const products = [
     image: "/images/categories/mens-fashion/6.jpg",
     categorySlug: "mens-fashion",
     description:
-      "Luxury eight-pocket baggy pant crafted with premium materials for exceptional comfort and bold street-style fashion."
+      "Bold indigo baggy denim with eight utility cargo pockets, designed for maximum storage and a standout street-style statement. The roomy silhouette and deep dye make this a head-turning wardrobe essential."
   },
 
   {
     id: "m5",
-    name: "Casual T-Shirt",
-    price: 650,
+    name: "Men's Dark Blue Cargo Denim",
+    price: 2200,
     category: "Men's Fashion",
     image: "/images/categories/mens-fashion/2.jpg",
     categorySlug: "mens-fashion",
     description:
-      "Soft and breathable casual t-shirt made for daily wear. Perfect for a relaxed fit while maintaining a clean, stylish appearance."
+      "Heavy-duty dark blue cargo denim featuring multiple utility pockets and durable contrast stitching for a rugged yet stylish streetwear look. Built for those who demand both function and fashion."
   },
   {
     id: "m6",
-    name: "Classic Polo Shirt",
-    price: 950,
+    name: "Washed Charcoal Baggy Denim",
+    price: 1850,
     category: "Men's Fashion",
     image: "/images/categories/mens-fashion/5.jpg",
     categorySlug: "mens-fashion",
     description:
-      "Classic polo shirt made with soft premium fabric. A timeless wardrobe essential suitable for both casual and semi-formal occasions."
+      "Wide-leg washed charcoal denim with a relaxed oversized silhouette and a soft faded finish, ideal for a contemporary streetwear or casual look. The muted tone pairs effortlessly with any outfit."
   },
   {
     id: "m7",
-    name: "Oxford Cotton Button-Down",
-    price: 1350,
+    name: "Faded Gradient Wide-Leg Denim",
+    price: 1990,
     category: "Men's Fashion",
     image: "/images/categories/mens-fashion/7.jpg",
     categorySlug: "mens-fashion",
     description:
-      "Premium Oxford cotton button-down shirt with a tailored finish. Perfect for office wear, business meetings, and everyday sophistication."
+      "Washed gradient wide-leg jeans with a drawstring waistband, featuring a striking two-tone fade from deep indigo to soft blue for a contemporary urban look. Effortlessly stylish with a relaxed, comfortable fit."
   },
 
   {
     id: "m8",
-    name: "Smart Casual Blazer",
-    price: 3450,
+    name: "Dark Washed Wide-Leg Denim",
+    price: 1990,
     category: "Men's Fashion",
     image: "/images/categories/mens-fashion/8.jpg",
     categorySlug: "mens-fashion",
     description:
-      "Elegant smart casual blazer crafted with premium materials for a sharp, polished look. Ideal for formal events and special occasions."
+      "Relaxed wide-leg jeans in a deep dark wash with a drawstring waist, combining effortless comfort with a bold, minimalist aesthetic. A versatile staple that transitions seamlessly from day to night."
   },
   {
     id: "m9",
@@ -242,53 +242,53 @@ export const products = [
   },
   {
     id: "w3",
-    name: "Casual Linen Top",
-    price: 950,
+    name: "Ladies Baggy Tie-Detail Jeans",
+    price: 2200,
     category: "Women's Fashion",
     image: "/images/categories/womens-fashion/3.jpg",
     categorySlug: "womens-fashion",
     description:
-      "Lightweight linen top designed for breathable comfort and effortless everyday fashion with a modern minimalist look."
+      "Fashion-forward wide-leg denim jeans featuring distinctive bow-tie detailing on the legs and a relaxed baggy fit. Combining comfort with a playful, modern street-style aesthetic."
   },
   {
     id: "w4",
-    name: "Premium Saree Collection",
-    price: 4500,
+    name: "Ladies High-Waisted Wide Cargo",
+    price: 2450,
     category: "Women's Fashion",
     image: "/images/categories/womens-fashion/4.jpg",
     categorySlug: "womens-fashion",
     description:
-      "Beautiful premium saree crafted with high-quality fabric and elegant detailing, making it perfect for weddings and special occasions."
+      "Retro-inspired high-waisted cargo jeans featuring a wide-leg silhouette and practical side pockets with button detailing. Crafted from durable denim for an effortless, casual look."
   },
   {
     id: "w5",
-    name: "Women's Kurti Elegant",
-    price: 1350,
+    name: "Ladies Premium Wide-Leg Denim",
+    price: 1990,
     category: "Women's Fashion",
     image: "/images/categories/womens-fashion/5.jpg",
     categorySlug: "womens-fashion",
     description:
-      "Stylish women's kurti combining comfort and sophistication, suitable for office wear, casual outings, and family gatherings."
+      "Classic wide-leg denim jeans designed for an elegant and comfortable fit, available in multiple versatile washes. Perfect for pairing with your favorite tops for any casual outing."
   },
   {
     id: "w6",
-    name: "Floral Print Maxi Dress",
-    price: 2200,
+    name: "Ladies Light Wash Wide-Leg Jeans",
+    price: 1990,
     category: "Women's Fashion",
     image: "/images/categories/womens-fashion/6.jpg",
     categorySlug: "womens-fashion",
     description:
-      "Flowing floral print maxi dress made from soft premium fabric, offering elegance and comfort for every occasion."
+      "Premium light-wash denim jeans featuring a classic high-waisted design and structured wide-leg cut. Ideal for creating clean, minimalist everyday outfits."
   },
   {
     id: "w7",
-    name: "Embroidered Three Piece",
+    name: "Ladies Acid Wash Strap Cargo",
     price: 2850,
     category: "Women's Fashion",
     image: "/images/categories/womens-fashion/7.jpg",
     categorySlug: "womens-fashion",
     description:
-      "Premium embroidered three-piece outfit featuring detailed craftsmanship and luxurious fabric for festive celebrations."
+      "Edgy acid-washed cargo jeans detailed with statement utility straps, buckles, and multiple pockets. Perfect for making a bold, contemporary streetwear statement."
   },
   {
     id: "w8",
@@ -322,33 +322,33 @@ export const products = [
   },
   {
     id: "w11",
-    name: "Solid Color Shrug",
-    price: 850,
+    name: "Ladies Light Wash Utility Cargo",
+    price: 2350,
     category: "Women's Fashion",
     image: "/images/categories/womens-fashion/11.jpg",
     categorySlug: "womens-fashion",
     description:
-      "Versatile solid color shrug made with lightweight fabric, perfect for layering and completing any outfit with elegance."
+      "Classic utility cargo jeans in a light blue wash, featuring flap pockets and a relaxed straight-leg fit. Combining functional streetwear elements with daily comfort."
   },
   {
     id: "w12",
-    name: "Casual Denim Jeans",
-    price: 1500,
+    name: "Ladies Dark Indigo Multi-Cargo",
+    price: 2650,
     category: "Women's Fashion",
     image: "/images/categories/womens-fashion/12.jpg",
     categorySlug: "womens-fashion",
     description:
-      "Comfortable women's denim jeans featuring a flattering fit and durable construction for everyday style and confidence."
+      "Durable dark indigo denim cargo pants equipped with multiple flap pockets for a rugged streetwear look. Designed with a relaxed straight-leg cut for all-day comfort."
   },
   {
     id: "w13",
-    name: "Premium Linen Trousers",
-    price: 1200,
+    name: "Ladies Classic Blue Cargo Jeans",
+    price: 2200,
     category: "Women's Fashion",
     image: "/images/categories/womens-fashion/13.jpg",
     categorySlug: "womens-fashion",
     description:
-      "Premium linen trousers offering breathable comfort, elegant tailoring, and a timeless design suitable for any season."
+      "Classic blue denim cargo jeans featuring mid-thigh utility flap pockets and a comfortable straight-leg fit. A versatile, everyday essential for a smart-casual wardrobe."
   },
 
   // ==========================================
@@ -356,43 +356,43 @@ export const products = [
   // ==========================================
   {
     id: "b1",
-    name: "Kids Casual Graphic Tee",
-    price: 450,
+    name: "Boys Denim Cargo Jogger Jeans",
+    price: 1150,
     category: "Boys Fashion",
     image: "/images/categories/boys-fashion/1.jpg",
     categorySlug: "boys-fashion",
     description:
-      "Comfortable graphic t-shirt made from soft cotton fabric, designed to keep kids comfortable and stylish throughout the day."
+      "Comfortable kids' denim cargo joggers featuring a drawstring elastic waist and side utility pockets. Crafted from soft, stretchable denim fabric for active boys."
   },
   {
     id: "b2",
-    name: "Boys Denim Shorts",
-    price: 650,
+    name: "Boys Red Cotton Casual Shirt",
+    price: 750,
     category: "Boys Fashion",
     image: "/images/categories/boys-fashion/2.jpg",
     categorySlug: "boys-fashion",
     description:
-      "Durable denim shorts featuring a comfortable fit and modern design, perfect for everyday adventures and outdoor activities."
+      "Premium short-sleeve button-down cotton shirt in a solid vibrant red. Perfect for casual gatherings, everyday wear, and layering."
   },
   {
     id: "b3",
-    name: "Comfort Cotton Panjabi",
-    price: 1100,
+    name: "Boys Pink Cotton Casual Shirt",
+    price: 750,
     category: "Boys Fashion",
     image: "/images/categories/boys-fashion/3.jpg",
     categorySlug: "boys-fashion",
     description:
-      "Traditional cotton Panjabi crafted with breathable fabric, offering comfort and elegance for festivals and family occasions."
+      "Stylish short-sleeve button-down cotton shirt in a soft pastel pink. Designed with lightweight, breathable fabric to keep your child comfortable all day."
   },
   {
     id: "b4",
-    name: "Boys Polo",
-    price: 780,
+    name: "Boys Blue Cotton Casual Shirt",
+    price: 750,
     category: "Boys Fashion",
     image: "/images/categories/boys-fashion/4.jpg",
     categorySlug: "boys-fashion",
     description:
-      "Classic boys polo shirt made with premium fabric for a smart, comfortable look suitable for school, outings, and casual wear."
+      "Classic short-sleeve button-down cotton shirt in a solid sky blue. An essential wardrobe staple that offers a clean, smart-casual look for boys."
   },
   // ==========================================
   // GIRLS FASHION (4 Images)
@@ -409,32 +409,32 @@ export const products = [
   },
   {
     id: "g2",
-    name: "Girls Leggings Set",
-    price: 550,
+    name: "Girls Star Pattern Wide-Leg Jeans",
+    price: 1350,
     category: "Girls Fashion",
     image: "/images/categories/girls-fashion/2.jpg",
     categorySlug: "girls-fashion",
     description:
-      "Comfortable leggings set crafted with stretchable fabric, perfect for everyday wear while allowing easy movement and lasting comfort."
+      "Fashionable wide-leg denim jeans featuring an all-over printed star pattern and comfortable elastic waist. Crafted with premium cotton-blend denim for all-day comfort and play."
   },
   {
     id: "g3",
-    name: "Girls Dress Luxury",
-    price: 1200,
+    name: "Girls Gingham Check Drawstring Pants",
+    price: 990,
     category: "Girls Fashion",
     image: "/images/categories/girls-fashion/3.jpg",
     categorySlug: "girls-fashion",
     description:
-      "Elegant girls' luxury dress featuring premium materials and stylish detailing, ideal for birthdays, parties, and special occasions."
+      "Charming blue-and-white checkered gingham pants with a relaxed straight-leg fit and adjustable drawstring waist. Perfect for a clean, stylish everyday look."
   },
   {
     id: "g4",
-    name: "Embroidered Salwar Kameez",
-    price: 1400,
+    name: "Girls Floral Embroidered Baggy Jeans",
+    price: 1450,
     category: "Girls Fashion",
     image: "/images/categories/girls-fashion/4.jpg",
     categorySlug: "girls-fashion",
     description:
-      "Traditional embroidered salwar kameez designed with quality fabric and beautiful craftsmanship for festive and cultural celebrations."
+      "Playful light-wash baggy denim jeans featuring colorful embroidered flower details. Designed with a soft, durable denim fabric and elastic waistband for active days."
   }
 ];
