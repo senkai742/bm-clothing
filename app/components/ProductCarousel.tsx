@@ -21,22 +21,41 @@ export default function ProductCarousel({
   categoryTitle,
 }: ProductCarouselProps) {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const autoScrollRef = useRef<NodeJS.Timeout | null>(null);
+
   const [isScrollable, setIsScrollable] = useState(false);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+
+  const updateScrollState = () => {
+    const container = scrollContainerRef.current;
+
+    if (!container) return;
+
+    setIsScrollable(container.scrollWidth > container.clientWidth + 5);
+
+    setCanScrollLeft(container.scrollLeft > 5);
+
+    setCanScrollRight(
+      container.scrollLeft + container.clientWidth <
+        container.scrollWidth - 5
+    );
+  };
 
   useEffect(() => {
-    const checkScrollable = () => {
-      const container = scrollContainerRef.current;
+    const container = scrollContainerRef.current;
 
-      if (!container) return;
+    if (!container) return;
 
-      setIsScrollable(container.scrollWidth > container.clientWidth + 5);
+    updateScrollState();
+
+    container.addEventListener("scroll", updateScrollState);
+    window.addEventListener("resize", updateScrollState);
+
+    return () => {
+      container.removeEventListener("scroll", updateScrollState);
+      window.removeEventListener("resize", updateScrollState);
     };
-
-    checkScrollable();
-
-    window.addEventListener("resize", checkScrollable);
-
-    return () => window.removeEventListener("resize", checkScrollable);
   }, [products]);
 
   const getScrollAmount = () => {
@@ -51,49 +70,85 @@ export default function ProductCarousel({
     return card ? card.offsetWidth + 12 : container.clientWidth;
   };
 
-  const scroll = (direction: "left" | "right") => {
-    const container = scrollContainerRef.current;
-
-    if (!container) return;
-
-    container.scrollBy({
-      left: direction === "left" ? -getScrollAmount() : getScrollAmount(),
-      behavior: "smooth",
-    });
+  const stopAutoScroll = () => {
+    if (autoScrollRef.current) {
+      clearInterval(autoScrollRef.current);
+      autoScrollRef.current = null;
+    }
   };
 
-  useEffect(() => {
+  const startAutoScroll = () => {
+    stopAutoScroll();
+
     const container = scrollContainerRef.current;
 
     if (!container || !isScrollable) return;
 
-    const interval = setInterval(() => {
-      if (
-        container.scrollLeft + container.clientWidth >=
-        container.scrollWidth - 5
-      ) {
+    autoScrollRef.current = setInterval(() => {
+      const amount = getScrollAmount();
+
+      const maxScroll = container.scrollWidth - container.clientWidth;
+
+      if (container.scrollLeft >= maxScroll - 5) {
         container.scrollTo({
           left: 0,
           behavior: "smooth",
         });
       } else {
-        container.scrollBy({
-          left: getScrollAmount(),
+        container.scrollTo({
+          left: Math.min(container.scrollLeft + amount, maxScroll),
           behavior: "smooth",
         });
       }
     }, 4000);
+  };
 
-    return () => clearInterval(interval);
-  }, [products, isScrollable]);
+  useEffect(() => {
+    startAutoScroll();
+
+    return () => stopAutoScroll();
+  }, [isScrollable]);
+
+  const scroll = (direction: "left" | "right") => {
+    stopAutoScroll();
+
+    const container = scrollContainerRef.current;
+
+    if (!container) return;
+
+    const amount = getScrollAmount();
+
+    const maxScroll = container.scrollWidth - container.clientWidth;
+
+    const target =
+      direction === "left"
+        ? Math.max(0, container.scrollLeft - amount)
+        : Math.min(maxScroll, container.scrollLeft + amount);
+
+    container.scrollTo({
+      left: target,
+      behavior: "smooth",
+    });
+
+    setTimeout(startAutoScroll, 300);
+  };
 
   return (
-    <div className="relative">
+    <div
+      className="relative"
+      onMouseEnter={stopAutoScroll}
+      onMouseLeave={startAutoScroll}
+    >
       {isScrollable && (
         <>
           <button
             onClick={() => scroll("left")}
-            className="absolute left-2 top-[34%] z-30 -translate-y-1/2 rounded-full border border-zinc-200 bg-white/95 p-2 text-zinc-600 shadow transition hover:bg-white hover:text-black active:scale-95"
+            disabled={!canScrollLeft}
+            className={`absolute left-2 top-[34%] z-30 -translate-y-1/2 rounded-full border border-zinc-200 bg-white/95 p-2 shadow transition ${
+              canScrollLeft
+                ? "text-zinc-600 hover:bg-white hover:text-black active:scale-95"
+                : "cursor-not-allowed opacity-40"
+            }`}
             aria-label="Previous"
           >
             <ChevronLeft className="h-5 w-5" />
@@ -101,7 +156,12 @@ export default function ProductCarousel({
 
           <button
             onClick={() => scroll("right")}
-            className="absolute right-2 top-[34%] z-30 -translate-y-1/2 rounded-full border border-zinc-200 bg-white/95 p-2 text-zinc-600 shadow transition hover:bg-white hover:text-black active:scale-95"
+            disabled={!canScrollRight}
+            className={`absolute right-2 top-[34%] z-30 -translate-y-1/2 rounded-full border border-zinc-200 bg-white/95 p-2 shadow transition ${
+              canScrollRight
+                ? "text-zinc-600 hover:bg-white hover:text-black active:scale-95"
+                : "cursor-not-allowed opacity-40"
+            }`}
             aria-label="Next"
           >
             <ChevronRight className="h-5 w-5" />
@@ -111,6 +171,10 @@ export default function ProductCarousel({
 
       <div
         ref={scrollContainerRef}
+        onTouchStart={stopAutoScroll}
+        onTouchEnd={startAutoScroll}
+        onMouseDown={stopAutoScroll}
+        onMouseUp={startAutoScroll}
         className="flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-smooth pb-4 scrollbar-none"
         style={{
           scrollbarWidth: "none",
