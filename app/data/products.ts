@@ -4,16 +4,47 @@ export const products = [
   // ==========================================
   {
     id: "m1",
-    name: "Premium Men's Shirt",
-    price: 850,
+    name: "Mens Stylish Baggy Pant",
+    price: 1850,
     category: "Men's Fashion",
     image: "/images/categories/mens-fashion/1.jpg",
     categorySlug: "mens-fashion",
     description:
-      "A premium cotton shirt designed for everyday comfort and effortless style. Crafted with quality fabric for a refined and modern look."
+      "A premium cotton baggy pant designed for everyday comfort and effortless style. Crafted with quality fabric for a refined and modern look."
   },
   {
     id: "m2",
+    name: "Mens Stylish 6pkt Pant",
+    price: 2550,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/3.jpg",
+    categorySlug: "mens-fashion",
+    description:
+      "Modern six-pocket cargo pant made with durable premium fabric, offering practicality and a stylish streetwear-inspired look."
+  },
+  {
+    id: "m3",
+    name: "Mens Stylish 6pkt Pant",
+    price: 2550,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/4.jpg",
+    categorySlug: "mens-fashion",
+    description:
+      "Premium six-pocket cargo pant designed for comfort, durability, and a modern casual appearance."
+  },
+  {
+    id: "m4",
+    name: "Mens Stylish Baggy 8pkt",
+    price: 5990,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/6.jpg",
+    categorySlug: "mens-fashion",
+    description:
+      "Luxury eight-pocket baggy pant crafted with premium materials for exceptional comfort and bold street-style fashion."
+  },
+
+  {
+    id: "m5",
     name: "Casual T-Shirt",
     price: 650,
     category: "Men's Fashion",
@@ -23,27 +54,7 @@ export const products = [
       "Soft and breathable casual t-shirt made for daily wear. Perfect for a relaxed fit while maintaining a clean, stylish appearance."
   },
   {
-    id: "m3",
-    name: "Slim Fit Denim Shirt",
-    price: 1450,
-    category: "Men's Fashion",
-    image: "/images/categories/mens-fashion/3.jpg",
-    categorySlug: "mens-fashion",
-    description:
-      "Modern slim-fit denim shirt featuring premium stitching and durable fabric. Suitable for both casual outings and smart occasions."
-  },
-  {
-    id: "m4",
-    name: "Oversized Graphic Tee",
-    price: 750,
-    category: "Men's Fashion",
-    image: "/images/categories/mens-fashion/4.jpg",
-    categorySlug: "mens-fashion",
-    description:
-      "Trendy oversized graphic t-shirt offering exceptional comfort with a contemporary streetwear-inspired design."
-  },
-  {
-    id: "m5",
+    id: "m6",
     name: "Classic Polo Shirt",
     price: 950,
     category: "Men's Fashion",
@@ -51,16 +62,6 @@ export const products = [
     categorySlug: "mens-fashion",
     description:
       "Classic polo shirt made with soft premium fabric. A timeless wardrobe essential suitable for both casual and semi-formal occasions."
-  },
-  {
-    id: "m6",
-    name: "Linen Blend Summer Shirt",
-    price: 1650,
-    category: "Men's Fashion",
-    image: "/images/categories/mens-fashion/6.jpg",
-    categorySlug: "mens-fashion",
-    description:
-      "Lightweight linen blend shirt designed to keep you cool and comfortable during warm weather while maintaining an elegant appearance."
   },
   {
     id: "m7",
@@ -72,6 +73,7 @@ export const products = [
     description:
       "Premium Oxford cotton button-down shirt with a tailored finish. Perfect for office wear, business meetings, and everyday sophistication."
   },
+
   {
     id: "m8",
     name: "Smart Casual Blazer",
@@ -82,29 +84,161 @@ export const products = [
     description:
       "Elegant smart casual blazer crafted with premium materials for a sharp, polished look. Ideal for formal events and special occasions."
   },
+  {
+    id: "m9",
+    name: "Navy Blue Slim Fit Blazer",
+    price: 11990,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/b1.png",
+    categorySlug: "mens-fashion",
+    description:
+      "Premium navy blue slim-fit blazer tailored for a sophisticated and modern appearance. Perfect for business meetings, weddings, and formal occasions."
+  },
+  {
+    id: "m10",
+    name: "Charcoal Grey Slim Fit Blazer",
+    price: 9990,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/b2.png",
+    categorySlug: "mens-fashion",
+    description:
+      "Elegant charcoal grey blazer featuring a slim-fit silhouette with premium craftsmanship, offering timeless style and exceptional comfort."
+  },
+  {
+    id: "m11",
+    name: "Burgundy Premium Blazer",
+    price: 13990,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/b3.png",
+    categorySlug: "mens-fashion",
+    description:
+      "A luxurious burgundy blazer crafted from high-quality fabric to deliver a refined look that's ideal for evening events and celebrations."
+  },
+  {
+    id: "m12",
+    name: "Classic Black Formal Blazer",
+    price: 10990,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/b4.png",
+    categorySlug: "mens-fashion",
+    description:
+      "Classic black formal blazer designed with a modern tailored fit, making it an essential wardrobe piece for professional and formal wear."
+  },
+  {
+    id: "m13",
+    name: "Camel Beige Smart Blazer",
+    price: 12990,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/b5.png",
+    categorySlug: "mens-fashion",
+    description:
+      "Sophisticated camel beige blazer offering a smart casual aesthetic with premium tailoring for versatile everyday elegance."
+  },
+  {
+    id: "m14",
+    name: "Forest Green Premium Blazer",
+    price: 15990,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/b6.png",
+    categorySlug: "mens-fashion",
+    description:
+      "Premium forest green blazer crafted for those who appreciate distinctive style, luxury materials, and exceptional tailoring."
+  },
+
+  {
+    id: "m15",
+    name: "Classic Black Crew Neck T-Shirt",
+    price: 100,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/t1.png",
+    categorySlug: "mens-fashion",
+    description:
+      "Comfortable crew neck t-shirt made from soft cotton fabric, perfect for everyday wear with a timeless minimalist design."
+  },
+  {
+    id: "m16",
+    name: 'Navy Blue "FOCUS" Graphic T-Shirt',
+    price: 100,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/t2.png",
+    categorySlug: "mens-fashion",
+    description:
+      "Stylish navy blue graphic t-shirt featuring a bold 'FOCUS' print, combining comfort with modern streetwear fashion."
+  },
+  {
+    id: "m17",
+    name: 'Olive Green "BELIEVE" Graphic T-Shirt',
+    price: 100,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/t3.png",
+    categorySlug: "mens-fashion",
+    description:
+      "Premium olive green graphic t-shirt featuring an inspiring 'BELIEVE' design with breathable cotton construction."
+  },
+  {
+    id: "m18",
+    name: "Classic White Crew Neck T-Shirt",
+    price: 100,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/t4.png",
+    categorySlug: "mens-fashion",
+    description:
+      "Essential white crew neck t-shirt made with soft, lightweight fabric for unmatched comfort and effortless everyday style."
+  },
+
+  {
+    id: "m19",
+    name: "Premium White Ribbed Tank Top",
+    price: 70,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/tt1.png",
+    categorySlug: "mens-fashion",
+    description:
+      "Premium ribbed tank top offering a snug fit, breathable fabric, and superior comfort for casual wear or layering."
+  },
+  {
+    id: "m20",
+    name: "Heather Grey Cotton Tank Top",
+    price: 70,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/tt2.png",
+    categorySlug: "mens-fashion",
+    description:
+      "Soft cotton tank top in heather grey, designed for maximum comfort during workouts, lounging, or everyday wear."
+  },
+  {
+    id: "m21",
+    name: "Classic Black Cotton Tank Top",
+    price: 70,
+    category: "Men's Fashion",
+    image: "/images/categories/mens-fashion/tt3.png",
+    categorySlug: "mens-fashion",
+    description:
+      "Classic black cotton tank top with a comfortable athletic fit, ideal for warm weather and active lifestyles."
+  },
 
   // ==========================================
   // WOMEN'S FASHION (13 Images)
   // ==========================================
   {
     id: "w1",
-    name: "Traditional Cotton Kurti",
-    price: 1250,
+    name: "Ladies Wide Leg Plazzo",
+    price: 2100,
     category: "Women's Fashion",
     image: "/images/categories/womens-fashion/1.jpg",
     categorySlug: "womens-fashion",
     description:
-      "Elegant traditional cotton kurti crafted from soft, breathable fabric. Perfect for everyday comfort with a timeless ethnic style."
+      "Contemporary wide-leg palazzo pants designed with premium fabric, offering exceptional comfort and a stylish modern appearance."
   },
   {
     id: "w2",
-    name: "Designer Georgette Kurti",
-    price: 1650,
+    name: "Ladies Casual 6pkt Pant",
+    price: 3850,
     category: "Women's Fashion",
     image: "/images/categories/womens-fashion/2.jpg",
     categorySlug: "womens-fashion",
     description:
-      "Premium georgette kurti featuring a graceful silhouette and refined detailing, ideal for festive occasions and casual gatherings."
+      "Contemporary Casual 6pkt Pant designed with premium fabric, offering exceptional comfort and a stylish modern appearance."
   },
   {
     id: "w3",
@@ -158,8 +292,8 @@ export const products = [
   },
   {
     id: "w8",
-    name: "Anarkali Style Suit",
-    price: 3200,
+    name: "Ladies Unique 8pkt",
+    price: 3550,
     category: "Women's Fashion",
     image: "/images/categories/womens-fashion/8.jpg",
     categorySlug: "womens-fashion",
@@ -168,23 +302,23 @@ export const products = [
   },
   {
     id: "w9",
-    name: "Modern Palazzo Set",
-    price: 1950,
+    name: "Ladies Casual 6Pkt Pant",
+    price: 3500,
     category: "Women's Fashion",
     image: "/images/categories/womens-fashion/9.jpg",
     categorySlug: "womens-fashion",
     description:
-      "Contemporary palazzo set designed with premium materials, offering exceptional comfort and a stylish modern appearance."
+      "Contemporary 6Pkt pant designed with premium materials, offering exceptional comfort and a stylish modern appearance."
   },
   {
     id: "w10",
-    name: "Silk Fusion Tunic",
-    price: 1750,
+    name: "Ladies Queen 8pkt",
+    price: 4550,
     category: "Women's Fashion",
     image: "/images/categories/womens-fashion/10.jpg",
     categorySlug: "womens-fashion",
     description:
-      "Elegant silk fusion tunic featuring a luxurious finish and versatile styling suitable for both formal and casual wear."
+      "A premium cotton shirt designed for everyday comfort and effortless style. Crafted with quality fabric for a refined and modern look."
   },
   {
     id: "w11",
@@ -265,8 +399,8 @@ export const products = [
   // ==========================================
   {
     id: "g1",
-    name: "Floral Cotton Frock",
-    price: 950,
+    name: "Girls Street Plazzo",
+    price: 1500,
     category: "Girls Fashion",
     image: "/images/categories/girls-fashion/1.jpg",
     categorySlug: "girls-fashion",
